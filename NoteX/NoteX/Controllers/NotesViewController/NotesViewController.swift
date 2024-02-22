@@ -57,13 +57,13 @@ final class NotesViewController: UIViewController {
 //MARK: - Setup Views
 private extension NotesViewController {
     func setupViews() {
-        self.view.backgroundColor = .white
-        self.view.addSubview(addNotesButton)
+        view.backgroundColor = .white
+        view.addSubview(addNotesButton)
     }
     
     func setupConstraints() {
         addNotesButton.snp.makeConstraints { make in
-            make.bottom.right.equalTo(view.safeAreaLayoutGuide)
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
             make.right.equalTo(view).inset(20)
         }
     }
