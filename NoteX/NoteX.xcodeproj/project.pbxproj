@@ -21,6 +21,9 @@
 		4486A6172B876A47003F432E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6132B876A46003F432E /* Poppins-Regular.ttf */; };
 		4486A6182B876A47003F432E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6142B876A47003F432E /* Poppins-Medium.ttf */; };
 		4486A6192B876A47003F432E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6152B876A47003F432E /* Poppins-SemiBold.ttf */; };
+		4486A61B2B877037003F432E /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A61A2B877037003F432E /* NotesViewModel.swift */; };
+		4486A61E2B87727B003F432E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4486A61D2B87727B003F432E /* SnapKit */; };
+		4486A6202B8777F9003F432E /* UIView+showAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A61F2B8777F9003F432E /* UIView+showAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 		4486A6132B876A46003F432E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		4486A6142B876A47003F432E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		4486A6152B876A47003F432E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		4486A61A2B877037003F432E /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		4486A61F2B8777F9003F432E /* UIView+showAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+showAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4486A61E2B87727B003F432E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +155,7 @@
 		4486A6082B87686E003F432E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4486A60D2B8768DE003F432E /* NotesViewController.swift */,
+				4486A6212B877E0E003F432E /* NotesViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4486A60F2B876A17003F432E /* UIColor.swift */,
+				4486A61F2B8777F9003F432E /* UIView+showAnimation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +203,15 @@
 				4486A6152B876A47003F432E /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4486A6212B877E0E003F432E /* NotesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4486A60D2B8768DE003F432E /* NotesViewController.swift */,
+				4486A61A2B877037003F432E /* NotesViewModel.swift */,
+			);
+			path = NotesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +230,9 @@
 			dependencies = (
 			);
 			name = NoteX;
+			packageProductDependencies = (
+				4486A61D2B87727B003F432E /* SnapKit */,
+			);
 			productName = NoteX;
 			productReference = 4486A5D12B87685C003F432E /* NoteX.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +305,9 @@
 				Base,
 			);
 			mainGroup = 4486A5C82B87685C003F432E;
+			packageReferences = (
+				4486A61C2B87727B003F432E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 4486A5D22B87685C003F432E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,7 +356,9 @@
 			files = (
 				4486A5DF2B87685C003F432E /* NoteX.xcdatamodeld in Sources */,
 				4486A60E2B8768DE003F432E /* NotesViewController.swift in Sources */,
+				4486A61B2B877037003F432E /* NotesViewModel.swift in Sources */,
 				4486A5D52B87685C003F432E /* AppDelegate.swift in Sources */,
+				4486A6202B8777F9003F432E /* UIView+showAnimation.swift in Sources */,
 				4486A5D72B87685C003F432E /* SceneDelegate.swift in Sources */,
 				4486A6102B876A17003F432E /* UIColor.swift in Sources */,
 			);
@@ -509,6 +533,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NoteX/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NoteX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -538,6 +563,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NoteX/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NoteX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -672,6 +698,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4486A61C2B87727B003F432E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4486A61D2B87727B003F432E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4486A61C2B87727B003F432E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4486A5DD2B87685C003F432E /* NoteX.xcdatamodeld */ = {
