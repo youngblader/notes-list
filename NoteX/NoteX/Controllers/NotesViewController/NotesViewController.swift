@@ -11,6 +11,7 @@ import SnapKit
 final class NotesViewController: UIViewController {
     private let notesViewModel: NotesViewModelProtcol
     
+    //MARK: - Views
     private lazy var addNotesButton: UIButton = {
         let button = UIButton()
         
@@ -29,6 +30,7 @@ final class NotesViewController: UIViewController {
         return button
     }()
     
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,11 +48,13 @@ final class NotesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Actions
     @objc private func didButtonTapped(sender: UIButton) {
         sender.showAnimation({})
     }
 }
 
+//MARK: - Setup Views
 private extension NotesViewController {
     func setupViews() {
         self.view.backgroundColor = .white
