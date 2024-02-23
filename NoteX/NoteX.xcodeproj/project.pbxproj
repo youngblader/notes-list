@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440705062B88A56E00FC329A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440705052B88A56E00FC329A /* Date.swift */; };
 		4486A5D52B87685C003F432E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A5D42B87685C003F432E /* AppDelegate.swift */; };
 		4486A5D72B87685C003F432E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A5D62B87685C003F432E /* SceneDelegate.swift */; };
 		4486A5DF2B87685C003F432E /* NoteX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4486A5DD2B87685C003F432E /* NoteX.xcdatamodeld */; };
@@ -17,13 +18,13 @@
 		4486A5FB2B87685E003F432E /* NoteXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A5FA2B87685E003F432E /* NoteXUITestsLaunchTests.swift */; };
 		4486A60E2B8768DE003F432E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A60D2B8768DE003F432E /* NotesViewController.swift */; };
 		4486A6102B876A17003F432E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A60F2B876A17003F432E /* UIColor.swift */; };
-		4486A6162B876A47003F432E /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6122B876A46003F432E /* Poppins-Bold.ttf */; };
-		4486A6172B876A47003F432E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6132B876A46003F432E /* Poppins-Regular.ttf */; };
-		4486A6182B876A47003F432E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6142B876A47003F432E /* Poppins-Medium.ttf */; };
-		4486A6192B876A47003F432E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4486A6152B876A47003F432E /* Poppins-SemiBold.ttf */; };
 		4486A61B2B877037003F432E /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A61A2B877037003F432E /* NotesViewModel.swift */; };
 		4486A61E2B87727B003F432E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4486A61D2B87727B003F432E /* SnapKit */; };
 		4486A6202B8777F9003F432E /* UIView+showAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A61F2B8777F9003F432E /* UIView+showAnimation.swift */; };
+		4486A6242B878ACE003F432E /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A6222B878ACE003F432E /* Note+CoreDataClass.swift */; };
+		4486A6252B878ACE003F432E /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A6232B878ACE003F432E /* Note+CoreDataProperties.swift */; };
+		4486A62A2B878E96003F432E /* NotesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A6292B878E96003F432E /* NotesTableView.swift */; };
+		4486A62C2B878ED2003F432E /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486A62B2B878ED2003F432E /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		440705052B88A56E00FC329A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4486A5D12B87685C003F432E /* NoteX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4486A5D42B87685C003F432E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4486A5D62B87685C003F432E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,12 +60,12 @@
 		4486A5FA2B87685E003F432E /* NoteXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4486A60D2B8768DE003F432E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		4486A60F2B876A17003F432E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		4486A6122B876A46003F432E /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		4486A6132B876A46003F432E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		4486A6142B876A47003F432E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		4486A6152B876A47003F432E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4486A61A2B877037003F432E /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		4486A61F2B8777F9003F432E /* UIView+showAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+showAnimation.swift"; sourceTree = "<group>"; };
+		4486A6222B878ACE003F432E /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4486A6232B878ACE003F432E /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4486A6292B878E96003F432E /* NotesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableView.swift; sourceTree = "<group>"; };
+		4486A62B2B878ED2003F432E /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440705072B88AD8700FC329A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4486A5DD2B87685C003F432E /* NoteX.xcdatamodeld */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		4486A5C82B87685C003F432E = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				4486A6072B876865003F432E /* App */,
-				4486A6092B876879003F432E /* UI */,
 				4486A6082B87686E003F432E /* Controllers */,
 				4486A60A2B87687E003F432E /* Models */,
 				4486A60C2B87688C003F432E /* Extensions */,
 				4486A60B2B876885003F432E /* Resources */,
-				4486A5DD2B87685C003F432E /* NoteX.xcdatamodeld */,
 			);
 			path = NoteX;
 			sourceTree = "<group>";
@@ -160,16 +168,11 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4486A6092B876879003F432E /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		4486A60A2B87687E003F432E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				440705072B88AD8700FC329A /* Base */,
+				4486A6262B878B07003F432E /* Note+CoreData */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,7 +180,6 @@
 		4486A60B2B876885003F432E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4486A6112B876A30003F432E /* Fonts */,
 				4486A5E02B87685D003F432E /* Assets.xcassets */,
 				4486A5E22B87685D003F432E /* LaunchScreen.storyboard */,
 				4486A5E52B87685D003F432E /* Info.plist */,
@@ -190,19 +192,9 @@
 			children = (
 				4486A60F2B876A17003F432E /* UIColor.swift */,
 				4486A61F2B8777F9003F432E /* UIView+showAnimation.swift */,
+				440705052B88A56E00FC329A /* Date.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		4486A6112B876A30003F432E /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				4486A6122B876A46003F432E /* Poppins-Bold.ttf */,
-				4486A6142B876A47003F432E /* Poppins-Medium.ttf */,
-				4486A6132B876A46003F432E /* Poppins-Regular.ttf */,
-				4486A6152B876A47003F432E /* Poppins-SemiBold.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		4486A6212B877E0E003F432E /* NotesViewController */ = {
@@ -210,8 +202,35 @@
 			children = (
 				4486A60D2B8768DE003F432E /* NotesViewController.swift */,
 				4486A61A2B877037003F432E /* NotesViewModel.swift */,
+				4486A6272B878E7D003F432E /* Views */,
+				4486A6282B878E83003F432E /* Cells */,
 			);
 			path = NotesViewController;
+			sourceTree = "<group>";
+		};
+		4486A6262B878B07003F432E /* Note+CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4486A6222B878ACE003F432E /* Note+CoreDataClass.swift */,
+				4486A6232B878ACE003F432E /* Note+CoreDataProperties.swift */,
+			);
+			path = "Note+CoreData";
+			sourceTree = "<group>";
+		};
+		4486A6272B878E7D003F432E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4486A6292B878E96003F432E /* NotesTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4486A6282B878E83003F432E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4486A62B2B878ED2003F432E /* NoteCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,11 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4486A5E42B87685D003F432E /* LaunchScreen.storyboard in Resources */,
-				4486A6162B876A47003F432E /* Poppins-Bold.ttf in Resources */,
 				4486A5E12B87685D003F432E /* Assets.xcassets in Resources */,
-				4486A6192B876A47003F432E /* Poppins-SemiBold.ttf in Resources */,
-				4486A6172B876A47003F432E /* Poppins-Regular.ttf in Resources */,
-				4486A6182B876A47003F432E /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,13 +369,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440705062B88A56E00FC329A /* Date.swift in Sources */,
 				4486A5DF2B87685C003F432E /* NoteX.xcdatamodeld in Sources */,
 				4486A60E2B8768DE003F432E /* NotesViewController.swift in Sources */,
+				4486A62C2B878ED2003F432E /* NoteCell.swift in Sources */,
 				4486A61B2B877037003F432E /* NotesViewModel.swift in Sources */,
 				4486A5D52B87685C003F432E /* AppDelegate.swift in Sources */,
 				4486A6202B8777F9003F432E /* UIView+showAnimation.swift in Sources */,
+				4486A6242B878ACE003F432E /* Note+CoreDataClass.swift in Sources */,
 				4486A5D72B87685C003F432E /* SceneDelegate.swift in Sources */,
+				4486A62A2B878E96003F432E /* NotesTableView.swift in Sources */,
 				4486A6102B876A17003F432E /* UIColor.swift in Sources */,
+				4486A6252B878ACE003F432E /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
