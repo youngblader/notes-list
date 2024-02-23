@@ -14,7 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let controller = NotesViewController(notesViewModel: NotesViewModel())
+        let viewModel = NotesViewModel()
+        let controller = NotesViewController(notesViewModel: viewModel)
         
         window?.rootViewController = UINavigationController(rootViewController: controller)
         window?.makeKeyAndVisible()
