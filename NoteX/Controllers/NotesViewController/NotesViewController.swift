@@ -45,16 +45,16 @@ final class NotesViewController: UIViewController {
         setupViews()
         setupConstraints()
         
-        notesTableView.onNoteEditTapped = { note in
-            self.editNoteItem(note)
+        notesTableView.onNoteEditTapped = { [weak self] note in
+            self?.editNoteItem(note)
         }
         
-        notesTableView.onNoteDeleteTapped = { note in
-            self.viewModel.removeNoteItem(note)
+        notesTableView.onNoteDeleteTapped = { [weak self] note in
+            self?.viewModel.removeNoteItem(note)
         }
         
-        viewModel.onNoteItemsSaved = { notes in
-            self.notesTableView.update(notes)
+        viewModel.onNoteItemsSaved = { [weak self] notes in
+            self?.notesTableView.update(notes)
         }
         
         viewModel.retrieveNoteItems()
@@ -67,10 +67,6 @@ final class NotesViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    deinit {
-        print("deinit vc")
     }
     
     private func editNoteItem(_ note: Note) {
